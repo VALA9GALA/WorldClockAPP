@@ -1,5 +1,10 @@
 body {
   background-color: pink;
   color: whitesmoke;
+}
+h1 {
+  text-align: center;
+}
+footer {
   text-align: center;
 }
