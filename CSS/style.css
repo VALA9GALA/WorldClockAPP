@@ -1,30 +1,59 @@
 body {
   background-color: pink;
   color: darkblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
   text-align: center;
 }
+h2 {
+  opacity: 0.9;
+}
+.city {
+  text-align: left;
+  margin-left: 20px;
+}
+.date {
+  margin-top: -15px;
+  text-align: left;
+}
+.time {
+  text-align: right;
+  font-size: 26px;
+  margin-right: 20px;
+  font-family: Orbitron;
+  color: rgb(200, 3, 200);
+  font-weight: bold;
+}
 footer {
   text-align: center;
+  margin-top: -20px;
 }
 select {
   display: block;
   margin: 0 auto;
-  font-size: 20px;
-  width: 300px;
-  background-color: aliceblue;
+  padding: 5px 7px;
+  font-size: 18px;
+  width: 240px;
+  background-color: azure;
   color: darkblue;
-  box-shadow: 2px 4px 6px 2px rgba(74, 136, 186, 0.5);
+  border: 2px solid darkcyan;
+  border-radius: 7px;
 }
 
-.city {
+.container {
   display: block;
-  margin: 0 auto;
+  margin: 40px auto;
   max-width: 300px;
   text-align: center;
-  background-color: aliceblue;
-  border: 1px solid darkcyan;
+  background-color: azure;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
   padding-bottom: 15px;
   box-shadow: 2px 4px 6px 2px rgba(74, 136, 186, 0.5);
+}
+hr {
+  max-width: 260px;
+  border: 1px solid darkslateblue;
+  opacity: 0.6;
 }
