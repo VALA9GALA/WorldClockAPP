@@ -7,7 +7,7 @@ function updateTime() {
   nyDateElement.innerHTML = nyDateTime.format("MMMM D, YYYY");
   nyTimeElement.innerHTML = nyDateTime.format("h:mm:ss[<small>] A[</small>]");
 
-  /* // Los Angeles
+  // Los Angeles
   let laElement = document.querySelector("#la");
   let laDateElement = laElement.querySelector(".date");
   let laTimeElement = laElement.querySelector(".time");
@@ -23,7 +23,7 @@ function updateTime() {
   mexicoCityDateElement.innerHTML = mexicoCityDateTime.format("MMMM D, YYYY");
   mexicoCityTimeElement.innerHTML = mexicoCityDateTime.format(
     "h:mm:ss[<small>] A[</small>]"
-  );*/
+  );
 }
 
 updateTime();
