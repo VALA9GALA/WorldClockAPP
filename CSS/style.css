@@ -1,10 +1,14 @@
 body {
   background-color: pink;
   color: darkblue;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
 }
+
 h1 {
   text-align: center;
+  font-family: Orbitron;
+  font-size: 30px;
+  opacity: 0.9;
 }
 h2 {
   opacity: 0.9;
@@ -14,20 +18,25 @@ h2 {
   margin-left: 20px;
 }
 .date {
-  margin-top: -15px;
+  margin-top: -20px;
   text-align: left;
+  opacity: 0.7;
 }
 .time {
   text-align: right;
   font-size: 26px;
+  margin-top: 10px;
   margin-right: 20px;
   font-family: Orbitron;
-  color: rgb(200, 3, 200);
+  color: #c803c8;
   font-weight: bold;
+}
+small {
+  font-size: 16px;
 }
 footer {
   text-align: center;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 select {
   display: block;
@@ -37,10 +46,12 @@ select {
   width: 240px;
   background-color: azure;
   color: darkblue;
-  border: 2px solid darkcyan;
-  border-radius: 7px;
+  border: dashed darkcyan;
+  border-width: 2px 4px;
+  border-radius: 40px;
+  /*border: 2px solid darkcyan;
+  border-radius: 7px;*/
 }
-
 .container {
   display: block;
   margin: 40px auto;
@@ -50,10 +61,11 @@ select {
   border: 2px solid darkcyan;
   border-radius: 10px;
   padding-bottom: 15px;
-  box-shadow: 2px 4px 6px 2px rgba(74, 136, 186, 0.5);
+  box-shadow: rgba(74, 136, 186, 0.5) 0px 5px 15px;
+  /* box-shadow: 2px 4px 6px 2px rgba(74, 136, 186, 0.5);*/
 }
 hr {
   max-width: 260px;
   border: 1px solid darkslateblue;
-  opacity: 0.6;
+  opacity: 0.5;
 }
