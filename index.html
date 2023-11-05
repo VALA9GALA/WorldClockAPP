@@ -17,32 +17,42 @@
   <body>
     <div class="container">
       <h1>🌐World Clock🌐</h1>
-      <select>
+      <select id="city-select">
         <option value="">Select a city...</option>
-        <option value="">London</option>
-        <option value="">Tokyo</option>
-        <option value="">Sydney</option>
-        <option value="">Moscow</option>
+        <!--  <option value="America/New_York">New York</option>-->
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="America/Mexico_City">Mexico City</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Europe/Moscow">Moscow</option>
+        <option value="Asia/Yerevan">Yerevan</option>
+        <option value="Asia/Shanghai">Shanghai</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <!-- <option value="Pacific/Fiji🏝️">Fiji</option>-->
       </select>
+      <div class="cities" id="cities">
+        <div class="selected-city" id="selected-city">
+          <div class="city first-city" id="ny">
+            <h2>New York🗽</h2>
+            <div class="date"></div>
+            <div class="time"><small></small></div>
+          </div>
+        </div>
+        <hr />
 
-      <div class="cities">
-        <div class="city" id="ny">
-          <h2>New York🗽</h2>
+        <div class="city second-city" id="giza">
+          <h2>Giza🌟</h2>
           <div class="date"></div>
           <div class="time"><small></small></div>
         </div>
-        <hr />
-        <div class="city" id="la">
-          <h2>Los Angeles🌟</h2>
-          <div class="date"></div>
-          <div class="time"><small></small></div>
-        </div>
-        <hr />
+
+        <!-- <hr />
         <div class="city" id="mexico-city">
           <h2>Mexico City<span class="rose">🌹</span></h2>
           <div class="date"></div>
           <div class="time"><small></small></div>
-        </div>
+        </div>-->
       </div>
     </div>
     <footer>
