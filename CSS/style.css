@@ -5,7 +5,7 @@ body {
 }
 .container {
   display: block;
-  margin: 40px auto;
+  margin: 120px auto;
   max-width: 300px;
   text-align: center;
   background-color: azure;
@@ -80,5 +80,5 @@ small {
 }
 footer {
   text-align: center;
-  margin-top: -30px;
+  margin-top: -110px;
 }
