@@ -36,8 +36,6 @@ select {
   border: dashed darkcyan;
   border-width: 2px 4px;
   border-radius: 40px;
-  /*border: 2px solid darkcyan;
-  border-radius: 7px;*/
 }
 select:focus {
   outline: none;
@@ -58,9 +56,6 @@ select:focus {
   text-align: left;
   margin-left: 20px;
 }
-/*.rose {
-  margin-left: -5px;
-}*/
 .date {
   margin-top: -20px;
   text-align: left;

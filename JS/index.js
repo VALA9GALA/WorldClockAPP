@@ -17,21 +17,15 @@ function updateTime() {
   gizaTimeElement.innerHTML = gizaDateTime.format(
     "h:mm:ss[<small>] A[</small>]"
   );
-
-  /*// Mexico City
-  let mexicoCityElement = document.querySelector("#mexico-city");
-  let mexicoCityDateElement = mexicoCityElement.querySelector(".date");
-  let mexicoCityTimeElement = mexicoCityElement.querySelector(".time");
-  let mexicoCityDateTime = moment().tz("America/Mexico_City");
-  mexicoCityDateElement.innerHTML = mexicoCityDateTime.format("MMMM D, YYYY");
-  mexicoCityTimeElement.innerHTML = mexicoCityDateTime.format(
-    "h:mm:ss[<small>] A[</small>]"
-  );*/
 }
 
 function updateCitySelect(event) {
   event.preventDefault();
   let cityTimezone = event.target.value;
+  if (cityTimezone === "current") {
+    cityTimezone = moment.tz.guess();
+  }
+
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
   let cityDateTime = moment().tz(cityTimezone);
   let firstCityElement = document.querySelector("#selected-city");
