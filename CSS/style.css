@@ -47,11 +47,18 @@ select:focus {
   text-align: left;
   margin-left: 20px;
 }
-#ny {
+/*#ny {
+  text-align: left;
+  margin-left: 0px;
+}*/
+#current {
   text-align: left;
   margin-left: 0px;
 }
-
+/*#cities {
+  text-align: left;
+  margin-left: 20px;
+}*/
 .selected-city {
   text-align: left;
   margin-left: 20px;

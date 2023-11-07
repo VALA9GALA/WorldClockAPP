@@ -1,11 +1,25 @@
 function updateTime() {
+  let currentElement = document.querySelector("#current");
+  let currentCityTimezone = moment.tz.guess();
+  let currentDateTime = moment.tz(currentCityTimezone);
+  /*let currentCityTimezoneName = currentCityTimezone
+    .replace("_", " ")
+    .split("/")[1];*/
+
+  currentElement.innerHTML = `<div id="#current">
+          <h2>Here, Now</h2>
+          <div class="date">${currentDateTime.format("MMMM D, YYYY")}</div>
+          <div class="time">${currentDateTime.format(
+            "h:mm:ss[<small>] A[</small>]"
+          )}</div></div>`;
+
   // New York
-  let nyElement = document.querySelector("#ny");
+  /* let nyElement = document.querySelector("#ny");
   let nyDateElement = nyElement.querySelector(".date");
   let nyTimeElement = nyElement.querySelector(".time");
   let nyDateTime = moment().tz("America/New_York");
   nyDateElement.innerHTML = nyDateTime.format("MMMM D, YYYY");
-  nyTimeElement.innerHTML = nyDateTime.format("h:mm:ss[<small>] A[</small>]");
+  nyTimeElement.innerHTML = nyDateTime.format("h:mm:ss[<small>] A[</small>]");*/
 
   // Giza
 
@@ -20,11 +34,11 @@ function updateTime() {
 }
 
 function updateCitySelect(event) {
-  event.preventDefault();
+  /*event.preventDefault();*/
   let cityTimezone = event.target.value;
-  if (cityTimezone === "current") {
+  /*if (cityTimezone === "current") {
     cityTimezone = moment.tz.guess();
-  }
+  }*/
 
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
   let cityDateTime = moment().tz(cityTimezone);
@@ -34,7 +48,12 @@ function updateCitySelect(event) {
           <div class="date">${cityDateTime.format("MMMM D, YYYY")}</div>
           <div class="time">${cityDateTime.format(
             "h:mm:ss[<small>] A[</small>]"
-          )}</div></div>`;
+          )}</div></div>
+          <a href="index.html">Back</a>`;
+  let secondCityElement = document.querySelector("#giza");
+  secondCityElement.remove();
+  let hrElement = document.querySelector("hr");
+  hrElement.remove();
 }
 
 let citySelectElement = document.querySelector("#city-select");
