@@ -49,7 +49,7 @@ function updateCitySelect(event) {
           <div class="time">${cityDateTime.format(
             "h:mm:ss[<small>] A[</small>]"
           )}</div></div>
-          <a href="/">Back</a>`;
+          <a href="index.html">Back</a>`;
   let secondCityElement = document.querySelector("#giza");
   secondCityElement.remove();
   let hrElement = document.querySelector("hr");
