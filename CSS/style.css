@@ -1,19 +1,5 @@
 body {
-  /*background-color: pink;*/
-  /*background-image: linear-gradient(
-    90deg,
-    transparent 50%,
-    rgba(213, 107, 192, 0.77) 50%
-  );
-  background-size: 171px 171px;
-  background-color: rgba(213, 57, 224, 0.29);*/
-  /*background-image: linear-gradient(
-    90deg,
-    transparent 50%,
-    rgba(36, 3, 69, 0.575) 50%
-  );
-  background-size: 171px 171px;*/
-  background-color: rgba(217, 69, 217, 0.2);
+  background-color: rgba(204, 49, 204, 0.2);
   color: darkblue;
   font-family: sans-serif;
 }
@@ -22,16 +8,11 @@ body {
   margin: 80px auto;
   max-width: 300px;
   text-align: center;
-  /*background: #f3b6e7;*/
   background-color: azure;
-  /* border: groove 2em goldenrod;
-  border-radius: 4em;*/
   border: 2px solid darkcyan;
   border-radius: 10px;
   padding-bottom: 15px;
-  box-shadow: rgba(30, 58, 81, 0.5) 0px 10px 30px;
-  /*box-shadow: rgba(74, 136, 186, 0.5) 0px 10px 30px;*/
-  /*box-shadow: 4px 8px 12px 4px rgba(74, 136, 186, 0.5);*/
+  box-shadow: rgba(30, 58, 81, 0.5) 0px 5px 15px;
 }
 h1 {
   text-align: center;
@@ -65,18 +46,10 @@ select:focus {
   text-align: left;
   margin-left: 20px;
 }
-/*#ny {
-  text-align: left;
-  margin-left: 0px;
-}*/
 #current {
   text-align: left;
   margin-left: 0px;
 }
-/*#cities {
-  text-align: left;
-  margin-left: 20px;
-}*/
 .selected-city {
   text-align: left;
   margin-left: 20px;

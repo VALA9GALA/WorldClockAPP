@@ -2,10 +2,6 @@ function updateTime() {
   let currentElement = document.querySelector("#current");
   let currentCityTimezone = moment.tz.guess();
   let currentDateTime = moment.tz(currentCityTimezone);
-  /*let currentCityTimezoneName = currentCityTimezone
-    .replace("_", " ")
-    .split("/")[1];*/
-
   currentElement.innerHTML = `<div id="#current">
           <h2>Here, Now</h2>
           <div class="date">${currentDateTime.format("MMMM D, YYYY")}</div>
@@ -34,12 +30,7 @@ function updateTime() {
 }
 
 function updateCitySelect(event) {
-  /*event.preventDefault();*/
   let cityTimezone = event.target.value;
-  /*if (cityTimezone === "current") {
-    cityTimezone = moment.tz.guess();
-  }*/
-
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
   let cityDateTime = moment().tz(cityTimezone);
   let firstCityElement = document.querySelector("#selected-city");
@@ -60,4 +51,4 @@ let citySelectElement = document.querySelector("#city-select");
 citySelectElement.addEventListener("change", updateCitySelect);
 
 updateTime();
-setInterval(updateTime, updateCitySelect, 1000);
+setInterval(updateTime, 1000);
